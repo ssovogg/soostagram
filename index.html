@@ -1,0 +1,253 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soostagram</title>
+    <script
+      src="https://kit.fontawesome.com/fbdf0195b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/user-data.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="inner">
+          <a href="index.html" class="logo">Soostagram</a>
+          <input type="text" placeholder="검색" class="header-search" />
+          <ul class="gnb">
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><i class="fa-regular fa-paper-plane"></i></li>
+            <li><i class="fa-regular fa-square-plus"></i></li>
+            <li><i class="fa-regular fa-compass"></i></li>
+            <li><i class="fa-regular fa-heart"></i></li>
+            <li class="gnb_mypage">
+              <img src="img/pic3.jpeg" alt="" class="header_user" />
+              <ul class="sub_menu hidden">
+                <li>
+                  <a href="profile.html">
+                    <i class="fa-regular fa-circle-user"></i>
+                    프로필
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-bookmark"></i>
+                    북마크
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    설정
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    계정전환
+                  </a>
+                </li>
+                <li><a href="login.html" class="logout_btn"> 로그아웃 </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="main-wrap">
+        <!-- main -->
+        <section class="main">
+          <!-- story -->
+          <section class="story">
+            <div class="inner">
+              <ul class="story_list">
+                <!-- <li>
+              <img src="img/pic1.jpeg"></img>
+              <span>ssoo_oogg</span>
+            </li>
+            <li>
+              <img src="img/pic2.jpeg"></img>
+              <span>dallyo</span>
+            </li>
+            <li>
+              <img src="img/pic3.jpeg"></img>
+              <span>ss_vely</span>
+            </li>
+            <li>
+              <img src="img/pic1.jpeg"></img>
+              <span>ssoo_oogg</span>
+            </li>
+            <li>
+              <img src="img/pic2.jpeg"></img>
+              <span>dallyo</span>
+            </li>
+            <li>
+              <img src="img/pic3.jpeg"></img>
+              <span>ss_vely</span>
+            </li>
+            <li>
+              <img src="img/pic1.jpeg"></img>
+              <span>ssoo_oogg</span>
+            </li>
+            <li>
+              <img src="img/pic2.jpeg"></img>
+              <span>dallyo</span>
+            </li>
+            <li>
+              <img src="img/pic3.jpeg"></img>
+              <span>ss_vely</span>
+            </li>
+            <li>
+              <img src="img/pic1.jpeg"></img>
+              <span>ssoo_oogg</span>
+            </li>
+            <li>
+              <img src="img/pic2.jpeg"></img>
+              <span>dallyo</span>
+            </li>
+            <li>
+              <img src="img/pic3.jpeg"></img>
+              <span>ss_vely</span>
+            </li>
+            <li>
+              <img src="img/pic1.jpeg"></img>
+              <span>ssoo_oogg</span>
+            </li>
+            <li>
+              <img src="img/pic2.jpeg"></img>
+              <span>dallyo</span>
+            </li>
+            <li>
+              <img src="img/pic3.jpeg"></img>
+              <span>ss_vely</span>
+            </li> -->
+              </ul>
+              <i class="prev fa-solid fa-circle-chevron-left hidden"></i>
+              <i class="next fa-solid fa-circle-chevron-right"></i>
+            </div>
+          </section>
+          <!-- pid -->
+          <section class="pids">
+            <div class="inner">
+              <ul class="pid">
+                <li class="pid_item">
+                  <!-- header -->
+                  <div class="pid_header">
+                    <a href="#" class="profile">
+                      <img src="img/pic1.jpeg" alt="" />
+                      <span class="user_id">ssoo_oogg</span>
+                    </a>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <!-- img -->
+                  <div class="pid_img_wrap">
+                    <div class="pid_img">
+                      <ul class="pid_img_list">
+                        <li>
+                          <img src="img/pic3.jpeg" alt="" class="content" />
+                        </li>
+                        <li>
+                          <img src="img/pic1.jpeg" alt="" class="content" />
+                        </li>
+                        <li>
+                          <img src="img/pic2.jpeg" alt="" class="content" />
+                        </li>
+                      </ul>
+                    </div>
+                    <i
+                      class="img_prev fa-solid fa-circle-chevron-left hidden"
+                    ></i>
+                    <i class="img_next fa-solid fa-circle-chevron-right"></i>
+                    <ul class="pagination"></ul>
+                  </div>
+                  <!-- buttons -->
+                  <ul class="pid_btns">
+                    <li>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-regular fa-paper-plane"></i>
+                    </li>
+                    <li><i class="fa-regular fa-bookmark bookmark"></i></li>
+                  </ul>
+                  <!-- pid content -->
+                  <div class="pid_content">
+                    <a href="#" class="like">
+                      <strong>1명</strong>
+                      <span>이 좋아합니다.</span>
+                    </a>
+                    <span class="pid_owner">
+                      <strong>ssoo_oogg</strong>
+                      <span>집에 가고 싶다</span>
+                    </span>
+                    <button class="comment"></button>
+                    <span class="upload">1일 전</span>
+                    <form class="comment_form hidden">
+                      <i class="fa-regular fa-face-smile"></i>
+                      <input type="text" placeholder="댓글 달기..." />
+                      <button>게시</button>
+                    </form>
+                    <!-- 댓글창 -->
+                    <ul class="user_comments hidden">
+                      <!-- <li class="user_comment_list">
+                    <a href="#" class="profile">
+                      <img src="img/pic1.jpeg" alt="">
+                    </a>
+                    <div class="user_comment">
+                      <a href="#" class="user_id">ssoo_oogg</a>
+                      <span class="user_text">집 가고 싶니?</span>
+                      <p class="comment_info">
+                        <span>10시간</span>
+                        <span class="comment_like">좋아요 1개</span>
+                        <span class="comment_comment">답글 달기</span>
+                      </p>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                  </li> -->
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <!-- aside -->
+        <aside class="aside">
+          <div class="aside-profile">
+            <a href="profile.html" class="aside-myimg"></a>
+            <p class="aside-myname">
+              <a href="profile.html">ssoo_oogg</a>
+              <span>쑥쑥이💚</span>
+            </p>
+            <button>전환</button>
+          </div>
+          <div class="aside-recommend">
+            <div class="recommend-header">
+              <strong>회원님을 위한 추천</strong>
+              <a href="#">모두 보기</a>
+            </div>
+            <ul class="aside-list"></ul>
+          </div>
+          <ul class="aside-gnb">
+            <li><a href="#">소개</a></li>
+            <li><a href="#">도움말</a></li>
+            <li><a href="#">홍보 센터</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">채용 정보</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">약관</a></li>
+            <li><a href="#">위치</a></li>
+            <li><a href="#">언어</a></li>
+          </ul>
+          <p class="aside-copy">&copy; 2022 INSTAGRAM FROM META</p>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

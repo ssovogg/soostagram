@@ -1,0 +1,193 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soostagram</title>
+    <script
+      src="https://kit.fontawesome.com/fbdf0195b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <!-- <script src="main.js" defer></script> -->
+    <script src="js/profile.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header>
+        <div class="inner">
+          <a href="index.html" class="logo">Soostagram</a>
+          <ul class="gnb">
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><i class="fa-regular fa-paper-plane"></i></li>
+            <li><i class="fa-regular fa-square-plus"></i></li>
+            <li><i class="fa-regular fa-compass"></i></li>
+            <li><i class="fa-regular fa-heart"></i></li>
+            <li class="gnb_mypage">
+              <img src="img/pic3.jpeg" alt="" class="header_user" />
+              <ul class="sub_menu hidden">
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-circle-user"></i>
+                    프로필
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-bookmark"></i>
+                    북마크
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    설정
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    계정전환
+                  </a>
+                </li>
+                <li><a href="login.html" class="logout_btn"> 로그아웃 </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- main -->
+      <div class="main_wrap">
+        <!-- profile -->
+        <section class="profile">
+          <div class="profile_top">
+            <a href="#" class="profile_img"></a>
+            <div class="profile_info">
+              <div class="profile_info_top">
+                <p class="profile_id">
+                  <span>ssoo_oogg</span>
+                  <button class="setting">
+                    <i class="fa-solid fa-gear"></i>
+                  </button>
+                </p>
+                <button class="profile_edit">프로필 편집</button>
+              </div>
+              <ul class="profile_info_center">
+                <li>
+                  <span class="title">게시물</span>
+                  <span class="number">4</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="title">팔로워</span>
+                    <span class="number">5</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="title">팔로우</span>
+                    <span class="number">3</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile_text">
+            <strong class="user_name">쑥쑥이</strong>
+            <span class="user_job">FE개발자</span>
+            <span class="user_text"
+              >그림그리기 좋아하는 프론트엔드 개발자입니다!</span
+            >
+          </div>
+        </section>
+        <!-- summary -->
+        <section class="summary">
+          <ul class="summary_list">
+            <li>
+              <span class="title">게시물</span>
+              <span class="number">3</span>
+            </li>
+            <li>
+              <span class="title">팔로워</span>
+              <span class="number">123</span>
+            </li>
+            <li>
+              <span class="title">팔로우</span>
+              <span class="number">179</span>
+            </li>
+          </ul>
+        </section>
+        <!-- contents -->
+        <section class="contents">
+          <ul class="tabs">
+            <!-- tab 1 - pids -->
+            <li class="tab_active">
+              <a href="#tab1" class="tab_btn">
+                <i class="fa-solid fa-table-cells"></i>
+              </a>
+              <div class="content">
+                <div class="pids">
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+            </li>
+            <!-- tab 2 - collection -->
+            <li>
+              <a href="#tab2" class="tab_btn">
+                <i class="fa-regular fa-bookmark"></i>
+              </a>
+              <div class="content">
+                <div class="collection">
+                  <div class="text">
+                    <span>저장한 내용은 회원님만 볼 수 있습니다</span>
+                    <button>+ 새 컬렉션</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- tab 3 - pics -->
+            <li>
+              <a href="#tab3" class="tab_btn">
+                <i class="fa-regular fa-user"></i>
+              </a>
+              <div class="content">
+                <div class="pics">
+                  <i class="fa-solid fa-user"></i>
+                  <h3>내가 나온 사진</h3>
+                  <p>
+                    사람들이 회원님을 사진에 태그하면 태그된 사진이 여기에
+                    표시됩니다.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <!-- popup -->
+    <div class="setting_menu hidden">
+      <a href="#">비밀번호 변경</a>
+      <a href="#">프로페셔널 계정</a>
+      <a href="#">QR 코드</a>
+      <a href="#">앱 및 웹사이트</a>
+      <a href="#">알림</a>
+      <a href="#">개인정보 및 보안</a>
+      <a href="#">로그인 활동</a>
+      <a href="#">문제 신고</a>
+      <a href="#">퍼가기</a>
+      <a href="#">로그아웃</a>
+      <a href="#" class="setting_cancle">취소</a>
+    </div>
+    <div class="setting_dim hidden"></div>
+  </body>
+</html>

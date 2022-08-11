@@ -1,0 +1,42 @@
+:root {
+  /* font-family */
+  --logo: 'Dancing Script', cursive;
+  --content: 'Noto Sans KR', sans-serif;
+
+  /* color */
+  --grey-dark: #9e9e9e;
+  --grey-light: rgb(245, 245, 245);
+  --grey: #cfcfcf;
+  --blue: #0095f6;
+  --white: #fff;
+  --red: #e53935;
+
+  /* layout */
+  --gap: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: var(--content);
+  background-color: var(--grey-light);
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
